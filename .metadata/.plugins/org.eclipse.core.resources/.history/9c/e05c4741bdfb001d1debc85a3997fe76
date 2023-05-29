@@ -1,0 +1,5 @@
+package com.rockers.model;
+
+public class User {
+
+}

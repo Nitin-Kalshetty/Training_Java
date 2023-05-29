@@ -1,0 +1,6 @@
+package com.rocker.models;
+
+public class Upstox extends Broker {
+
+	
+}

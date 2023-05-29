@@ -1,0 +1,15 @@
+package may22.suppressedException;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DbUtility {
+
+	public static Connection provideConnection(String url, String username, String password) {
+		try (return DriverManager.getConnection(url,username,password);){
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

@@ -1,0 +1,14 @@
+package com.rocker.models;
+
+import java.time.LocalDate;
+
+public class User {
+
+	private int userId;
+	private String userName;
+	private String address;
+	private LocalDate dateOfBirth;
+	private long aadharNo;
+	private String panCard;
+	
+}

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page isELIgnored="false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Display Form Data</h1>
+
+    <p>Username: <%= request.getParameter("username") %></p>
+    <c:out value="${param.username}" />
+    <p>Password: <%= request.getParameter("password") %></p>
+    <p>Mobile: <%= request.getParameter("mobile") %></p>
+    <p>Gender: <%= request.getParameter("gender") %></p>
+    <p>State: <%= request.getParameter("selectstate") %></p>
+
+    <h3>Selected Courses:</h3>
+<c:forEach items="${requestScope.courses}"  var="course">
+${course}
+</c:forEach>
+    
+	
+</body>
+</html>

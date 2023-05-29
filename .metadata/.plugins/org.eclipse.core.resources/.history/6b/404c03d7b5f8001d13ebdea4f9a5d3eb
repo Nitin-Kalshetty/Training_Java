@@ -1,0 +1,33 @@
+package may19.imageIO;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+
+
+public class ImageProcessing {
+
+	private static final String ENCRYPTION_ALGORITHM = "AES";
+	public static void main(String[] args) {
+		
+		String imagePath  = "example.jpg";
+		
+		try {
+			byte[] bytesOfImage =Files.readAllBytes(Path.of(imagePath));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block;
+			e.printStackTrace();
+		}
+
+	}
+//	public static SecretKey keyGenerator() {
+//		KeyGenerator kg = KeyGenerator.getInstance(ENCRYPTION_ALGORITHM);
+//		kg.init(256);
+//		return kg.generateKey();
+//	}
+ 
+}

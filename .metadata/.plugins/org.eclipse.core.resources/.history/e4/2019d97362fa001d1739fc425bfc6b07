@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+.styleBlock{
+	display:block;
+	margin : auto;
+}
+
+
+</style>
+<body>
+<label class="styleBlock">User Name</label>
+<input class="styleBlock"></input>
+<label class="styleBlock">Password</label>
+<input class="styleBlock"></input>
+<a class="styleBlock"  href="myNewServlet">Submit</a>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+package loggerPractice;
+
+
+
+public class LoggerMain {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

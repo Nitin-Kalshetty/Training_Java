@@ -1,0 +1,10 @@
+package may22.suppressedException;
+
+public class CreditCard {
+
+	private Integer creditCardNo;
+	private String bankName;
+	private CardName cardName;
+	private ExpiryMonth expiryMonth;
+}
+ 

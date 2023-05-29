@@ -1,0 +1,31 @@
+package may19.imageIO;
+
+import java.awt.Image;
+import java.io.File;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
+
+import javax.crypto.Cipher;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.spec.SecretKeySpec;
+
+public class ImageEncryptDecrypt {
+
+	public static void main(String[] args) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException {
+		
+
+		Scanner sc = new Scanner(System.in);
+		String filePath = sc.next().replace("\"", "");
+		File file = new File(filePath);
+		System.out.println("Enter the encryption key and remember if forgot not able to decrypt...");
+		byte[] secretKey = sc.next().getBytes();
+		SecretKeySpec sks = new SecretKeySpec(secretKey, "AES");
+		
+		Cipher cipher = Cipher.getInstance("AES");
+		cipher.init(Cipher.ENCRYPT_MODE, sks);
+		
+		byte[] cipherImage = cipher.doFinal(Image.get);
+	}
+
+}

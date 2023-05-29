@@ -1,0 +1,13 @@
+package may21.imageEncryptDecrypt;
+
+import javax.swing.JFrame;
+
+public class ImageOperation {
+
+	public static void main(String[] args) {
+		JFrame jframe = new JFrame();
+		
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package may22.suppressedException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		try {
+			throw new Exception("Exception");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			System.out.println();
+		}
+
+	}
+	
+	public static void suppress() {
+		try {
+			throw new ArrayIndexOutOfBoundsException();
+		}finally {
+			IllegalArgumentException iae = new IllegalArgumentException();
+			iae.getSuppressed();
+		}
+	}
+
+}

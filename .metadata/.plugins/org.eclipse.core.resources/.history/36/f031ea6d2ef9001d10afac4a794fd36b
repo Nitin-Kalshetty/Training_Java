@@ -1,0 +1,5 @@
+package models.banks.cards;
+
+public enum Partner {
+	
+}

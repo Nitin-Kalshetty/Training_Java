@@ -1,0 +1,11 @@
+package may22.suppressedException;
+
+
+
+class DBUtility {
+	
+	public static void provideConnection(String url,String username,String password) {
+		
+	}
+
+}

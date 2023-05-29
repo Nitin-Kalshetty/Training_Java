@@ -1,0 +1,5 @@
+package may22.suppressedException.bankingApplication.services;
+
+public interface UserServices {
+
+}

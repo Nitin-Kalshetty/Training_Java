@@ -1,0 +1,50 @@
+package com.cf;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class myNewServlet
+ */
+@WebServlet(description = "myApp", urlPatterns = { "/myNewServlet" },name="myNewServlet")
+public class myNewServlet extends HttpServlet {
+	
+	public PrintWriter out = null;
+
+    public myNewServlet() {
+        super();
+       
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+		
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		out = response.getWriter();
+		response.setContentType("text/html");
+		String name = request.getParameter("user");
+		String pass = request.getParameter("pass");
+		System.out.println(name +" "+pass);
+		System.out.println(request.toString());
+		if(name.equals("nitin") && pass.equals("nitin")) {
+			out.println("<h1>Welcome "+name+"<h1>");
+		}else {
+			out.println("<h1>You entered wrong credentials please check once </h1>");
+			
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package may19.imageIO;
+
+public @interface ArrayMax10 {
+
+}

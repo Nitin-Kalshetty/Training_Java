@@ -1,0 +1,35 @@
+package swingXchart;
+
+import java.awt.Dimension;
+import java.util.Timer;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+import org.knowm.xchart.XYChart;
+
+public class RealTimeGraphExample extends JFrame{
+
+	private JPanel chartPanel;
+	private XYChart chart;
+	private double x = 0.0;
+	private Timer timer;
+	
+	public RealTimeGraphExample() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Real Time Example");
+		chartPanel = new JPanel();
+		chartPanel.setPreferredSize(new Dimension(500,600));
+		add(chartPanel);
+		pack();
+		setVisible(true);
+	}
+	public JPanel getChartPanel() {
+		return chartPanel;
+	}
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(RealTimeGraphExample::new);
+	}
+
+}

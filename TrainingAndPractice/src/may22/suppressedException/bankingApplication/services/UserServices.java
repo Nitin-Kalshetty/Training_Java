@@ -1,0 +1,11 @@
+package may22.suppressedException.bankingApplication.services;
+
+import may22.suppressedException.bankingApplication.models.User;
+
+public interface UserServices {
+
+	public User createUser(User user);
+	public User deleteUser(User user);
+	public User updateUser(User user);
+	public User getUserById(String id);
+}

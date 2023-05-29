@@ -1,0 +1,57 @@
+package com.rocker.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class VariablesThroughAnnotation
+ */
+@WebServlet(urlPatterns = "/variablesThroughAnnotation",initParams = {@WebInitParam(name = "variable1",value = "I am variable 1"),@WebInitParam(name = "variable2",value = "I am variable 2")})
+public class VariablesThroughAnnotation extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    /**
+     * Default constructor. 
+     */
+	
+	String variableFirst = "";
+	String variableSecond = "";
+    public VariablesThroughAnnotation() {
+        // TODO Auto-generated constructor stub
+    }
+    
+    @Override
+    public void init(ServletConfig config) throws ServletException {    	
+    	super.init(config);
+    	variableFirst = (String)config.getInitParameter("variable1");
+    	variableSecond = (String)config.getInitParameter("variable2");
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+    
+    PrintWriter out = null;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		out.println("Printing the value of variable 1 : "+variableFirst);
+		out.println("Printing the value of variable 2 : "+variableSecond);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

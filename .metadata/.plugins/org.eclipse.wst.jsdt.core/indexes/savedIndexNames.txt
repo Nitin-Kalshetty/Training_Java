@@ -1,0 +1,17 @@
+INDEX VERSION 1.4+C:\Users\nitin\OneDrive\Desktop\Traning\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2352913404.index
+1290695787.index
+2554856699.index
+1430958097.index
+1310174254.index
+2371146722.index
+3721333160.index
+831139100.index
+970436474.index
+2698968768.index
+1065973531.index
+3629498215.index
+3663191678.index
+1963437456.index
+855216178.index
+1065973531.index

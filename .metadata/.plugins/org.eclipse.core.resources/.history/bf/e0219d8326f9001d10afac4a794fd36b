@@ -1,0 +1,11 @@
+package loggerPractice;
+
+import org.apache.logging.log4j.core.Logger;
+
+public class LoggerMain {
+
+	public static void main(String[] args) {
+		Logger log = 
+	}
+
+}

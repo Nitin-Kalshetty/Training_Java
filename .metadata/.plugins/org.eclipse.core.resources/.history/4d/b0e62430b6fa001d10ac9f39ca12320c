@@ -1,0 +1,53 @@
+import org.knowm.xchart.XYChart;
+import org.knowm.xchart.XYChartBuilder;
+import org.knowm.xchart.XChartPanel;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class RealTimeGraphExample extends JFrame {
+    private JPanel chartPanel;
+    private XYChart chart;
+    private double x = 0.0;
+    private Timer timer;
+
+    public RealTimeGraphExample() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Real-Time Graph Example");
+
+        chartPanel = new JPanel();
+        chartPanel.setPreferredSize(new Dimension(500, 400));
+        add(chartPanel);
+
+        chart = new XYChartBuilder().width(500).height(400).title("Real-Time Graph").build();
+        chart.addSeries("Data", new double[]{x}, new double[]{0}); // Initialize with dummy data
+
+        timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                addDataPoint(Math.random() * 100); // Example: Generate random data
+            }
+        }, 0, 1000); // Update every second
+
+        pack();
+        setVisible(true);
+    }
+
+    public void addDataPoint(double y) {
+        SwingUtilities.invokeLater(() -> {
+            chart.updateXYSeries("Data", new double[]{x}, new double[]{y}, null);
+            x += 1.0;
+            chartPanel.removeAll();
+            chartPanel.add(new XChartPanel<>(chart));
+            chartPanel.revalidate();
+            chartPanel.repaint();
+        });
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(RealTimeGraphExample::new);
+    }
+}

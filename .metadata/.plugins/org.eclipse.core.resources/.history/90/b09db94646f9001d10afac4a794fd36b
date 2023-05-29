@@ -1,0 +1,6 @@
+package models.banks.cards.enums;
+
+public enum Partner {
+	private Partner partner;
+	Partner(Oil )
+}

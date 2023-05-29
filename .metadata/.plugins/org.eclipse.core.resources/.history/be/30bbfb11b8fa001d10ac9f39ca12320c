@@ -1,0 +1,7 @@
+package com.rocker.models;
+
+public class Stock {
+
+	private String NSECode;
+	private double 
+}

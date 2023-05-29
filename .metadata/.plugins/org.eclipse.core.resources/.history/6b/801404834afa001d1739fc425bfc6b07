@@ -1,0 +1,10 @@
+package com.rocker.models;
+
+public class Broker {
+	
+	private int brokerId;
+	private String brokerName;
+	private long brokerWallet;
+	private 
+
+}

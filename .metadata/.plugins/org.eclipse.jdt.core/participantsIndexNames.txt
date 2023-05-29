@@ -1,0 +1,7 @@
+INDEX VERSION 1.132
+C:\Users\nitin\OneDrive\Desktop\Traning\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3283571954.index
+\first_jsp\src\main\java
+C:\Users\nitin\OneDrive\Desktop\Traning\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\855216178.index
+\usertaglibrary\src\main\java
+C:\Users\nitin\OneDrive\Desktop\Traning\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1065973531.index
+\usertaglibrary\src\main\resources

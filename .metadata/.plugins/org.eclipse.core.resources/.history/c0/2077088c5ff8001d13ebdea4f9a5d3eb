@@ -1,0 +1,5 @@
+package may22.suppressedException;
+
+public enum CardName {
+	MASTERCARD,
+}

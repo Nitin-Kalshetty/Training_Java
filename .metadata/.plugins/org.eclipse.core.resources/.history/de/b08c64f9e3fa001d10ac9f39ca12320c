@@ -1,0 +1,59 @@
+import org.knowm.xchart.*;
+import org.knowm.xchart.style.Styler;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class RealTimeTradingGraphExample extends JFrame {
+    private JPanel chartPanel;
+    private XYChart chart;
+    private Timer timer;
+    private int dataIndex = 0;
+
+    public RealTimeTradingGraphExample() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Real-Time Trading Graph Example");
+
+        chartPanel = new JPanel();
+        chartPanel.setPreferredSize(new Dimension(800, 600));
+        add(chartPanel);
+
+        // Initialize the line graph
+        chart = new XYChartBuilder().width(800).height(600).title("Real-Time Trading Graph").build();
+        chart.getStyler().setLegendVisible(false);
+
+        // Customize the axis labels and tick count as needed
+        chart.getStyler().setXAxisDecimalPattern("#");
+        chart.getStyler().setYAxisDecimalPattern("#");
+        chart.getStyler().setYAxisTickMarkSpacingHint(100);
+
+        // Schedule a timer to update the line graph with new data
+        timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                addDataPoint(dataIndex, 100 + Math.random() * 50); // Example: Generate random data
+                dataIndex++;
+            }
+        }, 0, 1000); // Update every second
+
+        pack();
+        setVisible(true);
+    }
+
+    public void addDataPoint(int x, double y) {
+        SwingUtilities.invokeLater(() -> {
+            chart.updateXYSeries("Series", new double[]{x}, new double[]{y}, null);
+            chartPanel.removeAll();
+            chartPanel.add(new XChartPanel<>(chart));
+            chartPanel.revalidate();
+            chartPanel.repaint();
+        });
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(RealTimeTradingGraphExample::new);
+    }
+}

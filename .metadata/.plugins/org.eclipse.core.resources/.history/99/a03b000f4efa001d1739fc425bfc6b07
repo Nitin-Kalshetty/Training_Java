@@ -1,0 +1,11 @@
+package com.rocker.models;
+
+public class Broker {
+	
+	private int brokerId;
+	private String brokerName;
+	private static final float sttCharge = 0.1f;
+	private static final float 
+	
+
+}

@@ -1,0 +1,15 @@
+package may22.suppressedException.bankingApplication.models;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class User {
+	
+	private String userName;
+	private String email;
+	private LocalDate dateOfBirth;
+	private String panCard;
+	private Address currentAddress;
+	private Address permanentAddress;
+	private List<? extends Cards> cards;
+}

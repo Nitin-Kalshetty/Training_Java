@@ -1,0 +1,9 @@
+package com.rocker.models;
+
+public class Broker {
+	
+	private int brokerId;
+	
+	
+
+}

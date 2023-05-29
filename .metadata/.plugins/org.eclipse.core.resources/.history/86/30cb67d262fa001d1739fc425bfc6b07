@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+.styleBlock{
+	display:block;
+	margin : auto;
+}
+#btn{
+	border:2px solid black;
+	display:inline-block;
+	padding:5px;
+}
+#divId{
+	padding:5%;
+	margin:auto;
+}
+
+</style>
+<body>
+<div id="divId">
+<label class="styleBlock">User Name</label>
+<input class="styleBlock"></input>
+<label class="styleBlock">Password</label>
+<input class="styleBlock"></input>
+<a class="styleBlock" id="btn" href="myNewServlet">Submit</a>
+</div>
+
+
+</body>
+</html>

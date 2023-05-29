@@ -1,0 +1,24 @@
+package may22.suppressedException;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class CreditCard {
+
+	private Integer creditCardNo;
+	private String bankName;
+	private CardName cardName;
+	private ExpiryMonth expiryMonth;
+	private Integer expiryYear;
+	private String cvv;
+	private String cardHolderName;
+	private String pin;
+	private String mobile;
+	private Integer limit;
+	private Integer spent;
+	private Integer available;
+	private String email;
+	private LocalDate dateOfBirth;
+	private List<Transaction> transactions;
+}
+ 

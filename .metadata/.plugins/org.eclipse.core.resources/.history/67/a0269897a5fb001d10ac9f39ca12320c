@@ -1,0 +1,28 @@
+<html>
+<body>
+<h2>Register User</h2>
+<form method="POST">
+
+<label>Username : </label>
+<input name="userName" placeholder="please enter user name"/>
+<br/> <br/>
+<label>Password : </label>
+<input name="password" placeholder="please enter password"/>
+<br/> <br/>
+<label> </label>
+<input name="userName" placeholder="please enter user name"/>
+<br/> <br/>
+<label>Username : </label>
+<input name="userName" placeholder="please enter user name"/>
+<br/> <br/>
+<label>Username : </label>
+<input name="userName" placeholder="please enter user name"/>
+<br/> <br/>
+
+
+</form>
+
+
+
+</body>
+</html>
