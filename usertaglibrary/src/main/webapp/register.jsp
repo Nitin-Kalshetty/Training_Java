@@ -21,15 +21,15 @@
 <input placeholder="enter the mobile" name="mobile" />
 <br>
 <br>
-<label for="gender" >Gender</label>
+<label for="gender" ><b>Gender</b></label>
 <br>
-<input type="radio" name="gender" value="male" />MALE
-<input type="radio" name="gender" value="female" />FEMALE
-<input type="radio" name="gender" value="others" />OTHERS
+<input type="radio" name="gender" value="male" />MALE  <br>
+<input type="radio" name="gender" value="female" />FEMALE <br>
+<input type="radio" name="gender" value="others" />OTHERS <br>
 <br>
 <br>
 
-<label for="selectstate">State</label>
+<label for="selectstate"><b>State</b> </label>
 <select name="selectstate" >
 <c:forEach items="${requestScope.allstates}"  var="state">
 <option  value="${state}">${state}</option>
@@ -38,11 +38,12 @@
 <br>
 <br>
 
-<label for="selectcourses" >Courses</label>
+<label for="selectcourses" ><b>Courses</b></label>
 <br>
 <br>
 <c:forEach items="${requestScope.allcourses}"  var="course">
 <input type="checkbox" name="selectcourses" value="${course}" /> ${course}
+<br>
 </c:forEach>
 <br>
 <br>

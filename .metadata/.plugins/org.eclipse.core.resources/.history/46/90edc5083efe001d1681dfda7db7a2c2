@@ -1,0 +1,7 @@
+package com.rocker.ConstructorInjection;
+
+public class Student {
+
+	private GeometrySet geometry;
+	private Backpack backpack;
+}

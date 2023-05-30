@@ -1,0 +1,51 @@
+package com.rocker.ConstructorInjection;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+    public static void main( String[] args ){
+       ApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
+       
+       
+       //Constructor-Injection by Type 
+      
+//       Student std = (Student) ctx.getBean("injectionByType");
+       
+//       System.out.println(std.getBackpack());     // output:	Backpack [I am in Backpack class]
+     
+//       System.out.println(std.getGeometry());     // output:  GeometrySet [I am in GeometrySet class]
+       
+       
+       
+       
+       //Constructor-Injection by Value
+       
+//       ConstructorByValue cbv = (ConstructorByValue) ctx.getBean("injectionByValue");
+       
+//       System.out.println(cbv.getA()); // output: 12
+       
+//       System.out.println(cbv.getB());	// output: I am string
+       
+//       System.out.println(cbv.isC());		// output: true
+       
+       
+       
+       
+       //Constructor Injection by Index
+       
+//       ConstructorByIndex  cbi = (ConstructorByIndex) ctx.getBean("injectionByIndex");
+//       
+//       System.out.println(cbi.getA());		// output: 12
+//       
+//       System.out.println(cbi.getB());		// output: 22
+//       
+//       System.out.println(cbi.getC());		// output: true
+//       
+//       System.out.println(cbi.getD());		// output: I am string
+    }
+}

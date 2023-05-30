@@ -1,0 +1,21 @@
+package com.rocker.ConstructorInjection;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+    public static void main( String[] args ){
+       ApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
+       
+       Student singletonObject1 = (Student) ctx.getBean("studentSingleton");
+       Student singletonObject2 = (Student) ctx.getBean("studentSingleton");
+       System.out.println(singletonObject1);
+       System.out.println(singletonObject2);
+       
+      
+    }
+}

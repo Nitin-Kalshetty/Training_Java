@@ -1,0 +1,13 @@
+package com.rocker.ConstructorInjection;
+
+public class GeometrySet {
+
+	public GeometrySet() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "GeometrySet [I am in GeometrySet class]";
+	}
+	
+}

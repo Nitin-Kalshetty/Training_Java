@@ -1,0 +1,5 @@
+package com.rocker.ConstructorInjection;
+
+public class GeometrySet {
+
+}

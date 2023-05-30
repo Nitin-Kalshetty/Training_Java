@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
+        
+       <!-- Constructor injection by type because we are not mentioning the variable name of student we are directly referring based on type it will choose.  -->
+   <!-- <bean id="injectionByType" class="com.rocker.ConstructorInjection.Student">
+        	<constructor-arg ref="dontUseIdForGeometryType"></constructor-arg>
+        	<constructor-arg ref="dontUseIdForBackpackType"></constructor-arg>
+        </bean>
+        <bean id="dontUseIdForGeometryType" class="com.rocker.ConstructorInjection.GeometrySet"/>
+        <bean id="dontUseIdForBackpackType" class="com.rocker.ConstructorInjection.Backpack"/>
+    --> 
+       
+       
+
+</beans>

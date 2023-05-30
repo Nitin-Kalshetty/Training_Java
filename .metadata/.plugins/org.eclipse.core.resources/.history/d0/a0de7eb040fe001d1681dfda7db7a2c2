@@ -1,0 +1,8 @@
+package com.rocker.ConstructorInjection;
+
+public class GeometrySet {
+
+	public GeometrySet() {
+		// TODO Auto-generated constructor stub
+	}
+}
