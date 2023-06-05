@@ -1,0 +1,22 @@
+package com.rocker.demo;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@ConfigurationProperties(prefix = "mysql")
+@Component
+public class MySqlProp {
+	private String title;
+	  private String itemLabel;
+	  private String qtyLabel;
+
+}

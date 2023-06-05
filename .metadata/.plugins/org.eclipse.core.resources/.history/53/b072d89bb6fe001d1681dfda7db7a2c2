@@ -1,0 +1,20 @@
+package com.rocker.ConstructorInjection;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
+public class Square implements Shape {
+	
+	public Square() {
+		System.out.println("I am in Square");
+	}
+
+	@Override
+	public void color() {
+		System.out.println("Black");
+		
+	}
+
+}

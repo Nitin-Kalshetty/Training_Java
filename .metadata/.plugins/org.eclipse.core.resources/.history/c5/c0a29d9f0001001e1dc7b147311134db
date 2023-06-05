@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@taglib prefix="spring" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Hi hello</h1>
+<spring:form action="display" method="post" modelAttribute="helper"> 
+
+	<spring:input path="helper."/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+	<spring:input path=""/>
+
+</spring:form>
+</body>
+</html>

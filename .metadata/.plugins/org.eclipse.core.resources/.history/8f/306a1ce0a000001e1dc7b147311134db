@@ -1,0 +1,14 @@
+package com.rocker.model;
+
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+@Component
+@PropertySource("classpath:${property.file}")
+public class CommonClass {
+
+	private String url;
+	private String driver;
+	private String user;
+	private String password;
+}

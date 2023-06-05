@@ -1,0 +1,11 @@
+<html>
+<body>
+<h2>Hello World!</h2>
+
+<form action="" method="">
+	<input name="username" placeholder="enter the username" />
+	<input name="secretMsg" placeholder="enter the secret message" />
+	<input type="submit" value="submit"/>
+</form>
+</body>
+</html>

@@ -2,7 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="C:\Users\nitin\OneDrive\Desktop\Traning\commonGatewayServlet"/>
+			<item value="C:\Users\nitin\OneDrive\Desktop\Traning\FrontEndProject\src\main\java\com\rocker\controller\WebInitializer.java"/>
+			<item value="C:\Users\nitin\OneDrive\Desktop\Traning\FrontEndPartProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -14,7 +15,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="internal"/>
+		<item key="catalog" value="https://repo.maven.apache.org/maven2/"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -26,15 +27,41 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.rocker.usertaglibrary"/>
-			<item value="com.rocker.first_jsp"/>
+			<item value="com.rocker.BasicSample"/>
+			<item value="com.rocker.sampleproject1"/>
+			<item value="com.rocker.FrontEndProject"/>
+			<item value="com.rocker.FrontEndPartProject"/>
+			<item value="com.rocker.June1"/>
+			<item value="com.rocker.ValidationAndExpressionProject2"/>
+			<item value="com.rocker.ValidationAndExpressionProject"/>
+			<item value="com.rocker.SecretMessage"/>
+			<item value="com.rocker.SpringMvc2"/>
+			<item value="com.rocker.SpringMvc1"/>
+			<item value="com.rocker"/>
+			<item value="com.rocker.ConstructorInjection"/>
+			<item value="com.rocker.DynamicScope"/>
+			<item value="com.rocker.SpringProject1"/>
+			<item value="com.rocker.demoApp"/>
 		</list>
 		<list key="groupId">
 			<item value="com.rocker"/>
 		</list>
 		<list key="artifactId">
+			<item value="BasicSample"/>
+			<item value="sampleproject1"/>
+			<item value="FrontEndProject"/>
+			<item value="FrontEndPartProject"/>
+			<item value="June1"/>
+			<item value="ValidationAndExpressionProject2"/>
+			<item value="ValidationAndExpressionProject"/>
+			<item value="SecretMessage"/>
+			<item value="SpringMvc2"/>
+			<item value="SpringMvc1"/>
+			<item value="ConstructorInjection"/>
+			<item value="DynamicScope"/>
+			<item value="SpringProject1"/>
+			<item value="demoApp"/>
 			<item value="usertaglibrary"/>
-			<item value="first_jsp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

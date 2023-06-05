@@ -1,0 +1,7 @@
+package com.rocker.ConstructorInjection;
+
+public class Rectangle implements Shape {
+	
+	
+
+}

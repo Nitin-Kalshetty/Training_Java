@@ -1,0 +1,9 @@
+package com.rocker.ConstructorInjection;
+
+public class Square implements Shape {
+	
+	public Square() {
+		System.out.println("I am in Square");
+	}
+
+}

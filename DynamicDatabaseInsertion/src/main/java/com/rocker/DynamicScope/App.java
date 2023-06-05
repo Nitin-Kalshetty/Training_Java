@@ -1,0 +1,24 @@
+package com.rocker.DynamicScope;
+
+import java.util.List;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+    public static void main( String[] args ) {
+
+    		ApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
+    		
+    		User user = (User) ctx.getBean("user");
+    	
+    	
+    }
+}

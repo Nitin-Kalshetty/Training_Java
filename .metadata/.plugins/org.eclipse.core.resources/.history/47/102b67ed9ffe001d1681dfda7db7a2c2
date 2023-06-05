@@ -1,0 +1,10 @@
+package com.rocker.ConstructorInjection;
+
+import org.springframework.stereotype.Component;
+
+
+public interface Shape {
+	
+	void color();
+
+}

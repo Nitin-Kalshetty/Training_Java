@@ -1,0 +1,18 @@
+package com.rocker.DynamicScope;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.rocker.model.CommonClass;
+
+@Controller
+public class MultipleDatabaseController {
+
+	@Autowired
+	private CommonClass commonClass;
+	
+	
+	
+	
+	
+}

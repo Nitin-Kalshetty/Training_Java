@@ -1,0 +1,10 @@
+package com.rocker.model;
+
+@
+public class CommonClass {
+
+	private String url;
+	private String driver;
+	private String user;
+	private String password;
+}

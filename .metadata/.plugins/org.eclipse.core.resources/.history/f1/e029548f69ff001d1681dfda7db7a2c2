@@ -1,0 +1,5 @@
+package com.cf.controller;
+
+public class HomeController {
+
+}

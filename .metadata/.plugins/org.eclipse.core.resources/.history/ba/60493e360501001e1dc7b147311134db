@@ -1,0 +1,13 @@
+package com.cf.controller;
+
+import com.cf.model.Helper;
+
+@org.springframework.web.bind.annotation.RestController
+public class RestController {
+	
+	@GetMapping("/data")
+	public Helper getData() {
+		return 
+	}
+
+}

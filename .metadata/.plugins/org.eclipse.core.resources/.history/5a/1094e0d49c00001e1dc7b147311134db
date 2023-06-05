@@ -1,0 +1,5 @@
+
+oracle.database.url=jdbc:oracle:thin:@localhost:1521:xe(SID)
+oracle.database.driverClassName=oracle.jdbc.driver.OracleDriver
+oracle.database.username=root
+oracle.database.password=root

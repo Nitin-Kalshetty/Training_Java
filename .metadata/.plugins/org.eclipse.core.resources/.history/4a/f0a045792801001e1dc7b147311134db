@@ -1,0 +1,5 @@
+package com.rocker.newPackage;
+
+public class NewOutsideController {
+
+}

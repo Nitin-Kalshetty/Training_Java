@@ -1,0 +1,5 @@
+
+mysql.database.url=jdbc:mysql://localhost/restBucks
+mysql.database.driverClassName=com.mysql.jdbc.Driver
+mysql.database.username=root
+mysql.database.password=root

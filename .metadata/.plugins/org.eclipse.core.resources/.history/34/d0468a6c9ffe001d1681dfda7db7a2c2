@@ -1,0 +1,8 @@
+package com.rocker.ConstructorInjection;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public interface Shape {
+
+}

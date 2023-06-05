@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="FrontEndPartProject">
+        <property name="context-root" value="FrontEndPartProject"/>
+        <property name="java-output-path" value="/FrontEndPartProject/target/classes"/>
+    </wb-module>
+</project-modules>

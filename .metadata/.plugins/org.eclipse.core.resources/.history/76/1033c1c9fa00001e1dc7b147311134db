@@ -1,0 +1,13 @@
+package com.cf.model;
+
+public class Address {
+	
+	private String road;
+	private String area;
+	private String city;
+	private String state;
+	private String pincode;
+	
+	
+
+}

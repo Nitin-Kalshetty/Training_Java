@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\nitin\OneDrive\Desktop\Traning\SpringWeb1 3 till validation err\SpringWeb1"/>
+			<item value="C:\Users\nitin\OneDrive\Desktop\Traning\SpringWeb1 3 till validation err"/>
+			<item value="C:\Users\nitin\OneDrive\Desktop\SpringWeb1 2\SpringWeb1"/>
 			<item value="C:\Users\nitin\OneDrive\Desktop\Traning"/>
 			<item value="J:\Users\nitin\eclipse-workspace"/>
 		</list>

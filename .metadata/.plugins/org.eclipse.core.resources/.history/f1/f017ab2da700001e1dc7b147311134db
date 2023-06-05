@@ -1,0 +1,43 @@
+package com.cf.controller;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.cf.model.CommonClass;
+
+
+
+@Controller
+public class HomeController {
+
+	@RequestMapping("/home")
+	public String homepage(HttpSession session) {
+		return "home";
+	}
+	
+	@Autowired
+	private CommonClass commonClass;
+	
+	@PostMapping("/loadProperties")
+	public void loadProperties(@RequestParam("database") Integer database) {
+		System.out.println("I am working...");
+		String databasePropertiesName = "" ;
+		if(database==1) {
+			databasePropertiesName = "oracle.properties";
+		}else if(database==2) {
+			databasePropertiesName = "mysql.properties";
+		}else {
+			System.out.println("Invalid Input");
+		}
+		System.setProperty("property.file", databasePropertiesName);
+		
+		System.out.println("driver : "+commonClass.getDriver()+" url : "+commonClass.getUrl()+" user : "+commonClass.getUser()+" password : "+commonClass.getPassword());
+	}
+}

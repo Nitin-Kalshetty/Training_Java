@@ -1,0 +1,5 @@
+
+oracle.database.url=jdbc:mysql://localhost/example
+oracle.database.driverClassName=oracle.jdbc.driver.OracleDriver
+oracle.database.username=root
+oracle.database.password=root

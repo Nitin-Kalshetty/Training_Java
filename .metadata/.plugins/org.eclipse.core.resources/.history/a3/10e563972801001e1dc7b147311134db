@@ -1,0 +1,18 @@
+package com.rocker.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan(basePackages = "com.rocker")
+public class SpringFirstWebApplication {
+
+	public static void main(String[] args) {
+
+		
+
+		SpringApplication.run(SpringFirstWebApplication.class, args);
+	}
+
+}

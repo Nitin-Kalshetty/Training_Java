@@ -1,0 +1,15 @@
+package com.rocker.DynamicScope;
+
+import java.util.List;
+import java.util.Map;
+
+public class User {
+
+	private Integer userId;
+	
+	private String userName;
+	
+	private List<String> courses;
+	
+	private Map<Integer, String> mapList;
+}

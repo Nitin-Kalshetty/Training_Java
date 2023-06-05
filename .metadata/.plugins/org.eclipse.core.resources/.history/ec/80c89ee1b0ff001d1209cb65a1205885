@@ -1,0 +1,21 @@
+package com.cf.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.cf.model.User;
+
+@Controller
+public class SpringFormController {
+	
+	
+	@RequestMapping("/register")
+	public String 
+
+	@RequestMapping("/testing")
+	public String testingModelAttribute(@ModelAttribute User user) {
+		
+		return "test1";
+	}
+}

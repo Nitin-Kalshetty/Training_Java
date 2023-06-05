@@ -1,0 +1,59 @@
+package com.rocker.ConstructorInjection;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+@Component
+@PropertySource("application.properties")
+public class InjectCollection {
+
+	@Value("${myList}")
+	private List<String> citiesList;
+
+	@Value("${myList}")
+	private Set<String> citiesSet;
+	
+	@Value("#{${myMap}}")
+	private Map<Integer,String> citiesMap;
+	
+	@Value("")
+	private List<String> unevenString;
+	
+	public InjectCollection(List<String> citiesList, Set<String> citiesSet, Map<Integer, String> citiesMap) {
+		super();
+		this.citiesList = citiesList;
+		this.citiesSet = citiesSet;
+		this.citiesMap = citiesMap;
+	}
+	public List<String> getCitiesList() {
+		return citiesList;
+	}
+	public void setCitiesList(List<String> citiesList) {
+		this.citiesList = citiesList;
+	}
+	public Set<String> getCitiesSet() {
+		return citiesSet;
+	}
+	public void setCitiesSet(Set<String> citiesSet) {
+		this.citiesSet = citiesSet;
+	}
+	public Map<Integer, String> getCitiesMap() {
+		return citiesMap;
+	}
+	public void setCitiesMap(Map<Integer, String> citiesMap) {
+		this.citiesMap = citiesMap;
+	}
+	public InjectCollection() {
+	}
+	
+	
+	
+	
+	
+}

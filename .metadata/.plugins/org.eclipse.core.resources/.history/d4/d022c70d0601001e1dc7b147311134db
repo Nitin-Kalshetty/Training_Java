@@ -1,0 +1,19 @@
+package com.cf.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.cf.model.Address;
+import com.cf.model.Helper;
+import com.cf.model.User;
+
+@org.springframework.web.bind.annotation.RestController
+public class RestController {
+	
+	@GetMapping("/data")
+	public Address getData(@RequestBody Helper helper) {
+		
+		return new Address("road", "area", "city", "state", "pincode");
+	}
+
+}

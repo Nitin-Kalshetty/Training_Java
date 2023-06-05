@@ -1,0 +1,8 @@
+package com.rocker.demo;
+
+public class OracleProp {
+	private String title;
+	  private String itemLabel;
+	  private String qtyLabel;
+
+}

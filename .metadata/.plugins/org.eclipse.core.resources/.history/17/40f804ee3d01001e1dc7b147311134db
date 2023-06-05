@@ -1,0 +1,22 @@
+package com.rocker.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+public class MyAppProperties {
+	@Autowired
+	OracleProp op;
+	@Autowired
+	MySqlProp mp;
+	@Autowired
+	MainProp main;
+
+}

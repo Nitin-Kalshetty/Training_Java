@@ -1,0 +1,13 @@
+
+server.port=8081
+server.servlet.context-path=/rocker
+management.endpoints.web.exposure.include=*
+
+title=i am mysql
+itemLabel=mysql
+qtyLabel=52
+
+#
+
+height=12
+width=20

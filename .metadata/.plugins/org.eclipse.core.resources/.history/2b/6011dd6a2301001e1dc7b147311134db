@@ -1,0 +1,27 @@
+package com.rocker.demo;
+
+import org.apache.catalina.mbeans.SparseUserDatabaseMBean;
+
+import lombok.Getter;
+import lombok.Setter;
+
+public class User {
+
+	
+	@Getter
+	@Setter
+	private String uid;
+	private String name;
+	private String address;
+	public User(String uid, String name, String address) {
+		super();
+		this.uid = uid;
+		this.name = name;
+		this.address = address;
+	}
+	public User() {
+		super();
+	}
+	
+	
+}

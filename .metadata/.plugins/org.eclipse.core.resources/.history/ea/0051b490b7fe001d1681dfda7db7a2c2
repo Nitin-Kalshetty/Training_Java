@@ -1,0 +1,8 @@
+package com.rocker.ConstructorInjection;
+
+public class User {
+
+	private Integer userId;
+	
+	
+}

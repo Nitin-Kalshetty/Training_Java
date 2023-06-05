@@ -1,0 +1,13 @@
+package com.cf.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class SecretMessageController {
+
+	@RequestMapping("/print")
+	public String printPage() {
+		return "print";
+	}
+}

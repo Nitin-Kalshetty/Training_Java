@@ -5,6 +5,15 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
         
-      <context:component-scan base-package="com.rocker"></context:component-scan>
+      <bean id="studentSingleton" scope="singleton" class="com.rocker.ConstructorInjection.Student">
+      		<property name="backpack">
+      			<bean scope="prototype" class="com.rocker.ConstructorInjection.Backpack"></bean>
+      		</property>
+      </bean>
+      <bean id="studentPrototype" scope="prototype" class="com.rocker.ConstructorInjection.Student">
+      		<property name="backpack">
+      			<bean scope="singleton" class="com.rocker.ConstructorInjection.Backpack"></bean>
+      		</property>
+      </bean>
 
 </beans>

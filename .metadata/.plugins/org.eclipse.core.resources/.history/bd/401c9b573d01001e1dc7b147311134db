@@ -1,0 +1,9 @@
+package com.rocker.demo;
+
+public class MyAppProperties {
+	String tableSize;
+	OracleProp op;
+	MySqlProp mp;
+	MainProp main;
+
+}

@@ -1,0 +1,6 @@
+package com.rocker.controller;
+
+@Controller
+public class Controller {
+
+}

@@ -1,0 +1,8 @@
+package com.cf.model;
+
+public class Helper {
+	
+	
+	private User user;
+
+}

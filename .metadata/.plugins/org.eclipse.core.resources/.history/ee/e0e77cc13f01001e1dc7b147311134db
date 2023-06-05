@@ -1,0 +1,26 @@
+package com.rocker.demo;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Data
+@ConfigurationProperties(prefix = "main")
+@Component
+public class MainProp {
+
+	private String height;
+	private String width;
+	@Override
+	public String toString() {
+		return "MainProp [height=" + height + ", width=" + width + "]";
+	}
+	
+	
+}
+
+

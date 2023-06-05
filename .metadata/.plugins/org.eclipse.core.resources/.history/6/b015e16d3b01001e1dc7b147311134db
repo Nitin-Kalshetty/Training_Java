@@ -1,0 +1,2 @@
+myList=hello1,hello2,hello3,hello4,hello5,hello1,hello2,hello3,hello4,hello5
+myMap={1:'i am first',2:'i am second',3:'i am third',1:'i am first',2:'i am second',3:'i am third'}
